@@ -9,6 +9,10 @@ body::selection {
     background-color: #f46b66;
 }
 
+button {
+    cursor: pointer;
+}
+
 .wrapper {
     min-height: 100%;
     width: 100%;
@@ -360,9 +364,13 @@ body::selection {
     margin-right: 16px;
 }
 
-.directions {}
+.directions {
+    padding-bottom: 180px;
+}
 
-.directions__inner {}
+.directions__inner {
+    position: relative;
+}
 
 .directions__heading {
     margin-bottom: 90px;
@@ -372,6 +380,7 @@ body::selection {
 
 .directions__filter-box {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 56px;
 }
 
@@ -384,6 +393,7 @@ body::selection {
 }
 
 .directions__filter-btn {
+    display: block;
     background-color: transparent;
     color: #9a9ca5;
     border: 1px solid #9a9ca5;
@@ -391,6 +401,7 @@ body::selection {
     font-weight: 700;
     line-height: 1;
     padding: 5px 7px;
+    white-space: nowrap;
 }
 
 .directions__filter-btn--active {
@@ -409,9 +420,6 @@ body::selection {
 
 .directions__list-item {
     list-style: none;
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
 }
 
 .directions__list-link {
@@ -436,6 +444,8 @@ body::selection {
 }
 
 .directions__image-box {}
+
+.directions__image-box img {}
 
 .directions__link-content {
     padding: 24px;
@@ -488,4 +498,24 @@ body::selection {
 
 .directions__list-item--empty span {
     max-width: 240px;
+}
+
+.directions__list-item--marketing .directions__link-tag {
+    background-color: #03cea4;
+}
+
+.directions__list-item--managment .directions__link-tag {
+    background-color: #5a87fc;
+}
+
+.directions__list-item--hr .directions__link-tag {
+    background-color: #f89828;
+}
+
+.directions__list-item--design .directions__link-tag {
+    background-color: #f52f6e;
+}
+
+.directions__list-item--development .directions__link-tag {
+    background-color: #7772f1;
 }
