@@ -58,6 +58,10 @@ button {
     padding-bottom: 200px;
 }
 
+.main__info {
+    padding-bottom: 180px;
+}
+
 .button {
     display: inline-block;
     font-weight: 700;
@@ -1124,8 +1128,7 @@ button {
     color: #ff3f3a;
 }
 
-.blog__item-inner {
-}
+.blog__item-inner {}
 
 .blog__image-box {
     border-radius: 4px;
@@ -1246,4 +1249,118 @@ button {
 
 .blog__item--article .blog__image-box span::before {
     background: url("../images/icons/article-img.svg") 0 0 / 100% no-repeat;
+}
+
+/* ////////////////////////////////// */
+
+/* #map {
+    width: 100%;
+    height: 400px;
+} */
+
+.info {}
+
+.info__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.info__content {
+    margin-right: 30px;
+}
+
+.info__heading {
+    margin-bottom: 40px;
+}
+
+.info__contacts {
+    margin-bottom: 50px;
+}
+
+.info__contacts-item {
+    margin-bottom: 24px;
+    padding-left: 24px;
+}
+
+.info__contacts-item:last-child {
+    margin-bottom: 0;
+}
+
+.info__item-top {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    color: #787a80;
+    position: relative;
+}
+
+.info__item-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -36px;
+    width: 24px;
+    height: 24px;
+}
+
+.info__item-link {
+    font-size: 18px;
+    line-height: 150%;
+    transition: all .3s;
+}
+
+.info__item-link:not(.info__item-link--address):hover {
+    color: #ff3f3a;
+}
+
+.info__item-link--address {
+    color: #1e212c;
+}
+
+.info__mail .info__item-top::before {
+    background: url(../images/icons/chat-icon.svg) 0 0 / 100% no-repeat;
+}
+
+.info__tel .info__item-top::before {
+    background: url(../images/icons/phone-icon.svg) 0 0 / 100% no-repeat;
+}
+
+.info__address .info__item-top::before {
+    background: url(../images/icons/mark-icon.svg) 0 0 / 100% no-repeat;
+}
+
+.info__follow {}
+
+.info__follow-head {
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.info__socials {
+    display: flex;
+}
+
+.info__socials-item {
+    margin-right: 32px;
+}
+
+.info__socials-item:last-child {
+    margin-right: 0;
+}
+
+.info__socials-link path {
+    transition: all .3s;
+}
+
+.info__socials-link:hover path {
+    fill: #1e212c;
+}
+.info__map {
+    height: 412px;
+    width: 100%;
+    max-width: 705px;
 }

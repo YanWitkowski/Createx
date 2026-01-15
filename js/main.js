@@ -59,4 +59,5 @@ $(function () {
             $(this).children('.program__acc-text').slideDown()
         }
     })
+
 })
