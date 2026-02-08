@@ -12,36 +12,40 @@
     <title>Createx</title>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
+        <div class="overlay"></div>
         <header class="header">
-            <div class="header__top">
+            <a href="#" class="burger burger--follow">
+                <span></span>
+            </a>
+            <div class="header__top header__top--open">
                 <div class="container">
                     <div class="header__top-inner">
-                        <a class="header__logo logo" href="#">
+                        <a class="header__logo logo" href="/">
                             <img src="images/logo.svg" alt="Logo">
                         </a>
                         <nav class="header__nav">
                             <ul class="header__nav-list">
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">About Us</a>
+                                    <a class="header__nav-link" href="#about">About Us</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Courses</a>
+                                    <a class="header__nav-link" href="#directions">Courses</a>
                                 </li>
                                 <li class="header__nav-item">
                                     <a class="header__nav-link" href="#">Events</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Blog</a>
+                                    <a class="header__nav-link" href="#blog">Blog</a>
                                 </li>
                                 <li class="header__nav-item">
-                                    <a class="header__nav-link" href="#">Contacts</a>
+                                    <a class="header__nav-link" href="#info">Contacts</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="header__btn-box">
-                            <a class="header__top-btn button" href="#">Get consultation</a>
+                            <a class="header__top-btn button" href="#questions">Get consultation</a>
                             <div class="header__user-nav">
                                 <a class="header__user-btn" href="#">Log in</a>
                                 /
@@ -105,7 +109,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="main__about about">
+            <section class="main__about about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__createx">
@@ -162,7 +166,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__directions directions">
+            <section class="main__directions directions" id="directions">
                 <div class="container">
                     <div class="directions__inner">
                         <div class="directions__heading heading heading--text-center">
@@ -301,7 +305,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="cert__image_box">
+                        <div class="cert__image-box">
                             <img src="images/award.jpg" alt="Certificate">
                         </div>
                     </div>
@@ -647,6 +651,7 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="team__dots"></div>
                     </div>
                 </div>
             </section>
@@ -1003,7 +1008,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__blog blog">
+            <section class="main__blog blog" id="blog">
                 <div class="container">
                     <div class="blog__inner">
                         <div class="blog__top">
@@ -1098,7 +1103,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__info info">
+            <section class="main__info info" id="info">
                 <div class="container">
                     <div class="info__inner">
                         <div class="info__content">
@@ -1214,7 +1219,7 @@
                     </div>
                 </div>
             </section>
-            <section class="main__questions questions id="questions"">
+            <section class="main__questions questions" id="questions">
                 <div class="container">
                     <div class="questions__inner">
                         <div class="questions__img">
@@ -1229,17 +1234,20 @@
                                 <div class="questions__form-row">
                                     <label class="questions__form-label">
                                         First Name*
-                                        <input type="text" class="questions__form-input" placeholder="Your first name" required>
+                                        <input type="text" class="questions__form-input" placeholder="Your first name"
+                                            required>
                                     </label>
                                     <label class="questions__form-label">
                                         Last Name*
-                                        <input type="text" class="questions__form-input" placeholder="Your last name" required>
+                                        <input type="text" class="questions__form-input" placeholder="Your last name"
+                                            required>
                                     </label>
                                 </div>
                                 <div class="questions__form-row">
                                     <label class="questions__form-label">
                                         Email*
-                                        <input type="email" class="questions__form-input" placeholder="Your working email" required>
+                                        <input type="email" class="questions__form-input"
+                                            placeholder="Your working email" required>
                                     </label>
                                     <label class="questions__form-label">
                                         Phone
@@ -1248,7 +1256,8 @@
                                 </div>
                                 <label class="questions__text-label">
                                     Message*
-                                    <textarea class="questions__form-text" placeholder="Your message" required></textarea>
+                                    <textarea class="questions__form-text" placeholder="Your message"
+                                        required></textarea>
                                 </label>
                                 <div class="questions__form-row">
                                     <label class="questions__checkbox-label">
@@ -1258,7 +1267,8 @@
                                         </div>
                                         I agree to receive communications from Createx Online School
                                     </label>
-                                    <button type="submit" class="questions__form-btn button" href="#">Send message</button>
+                                    <button type="submit" class="questions__form-btn button" href="#">Send
+                                        message</button>
                                 </div>
                             </form>
                         </div>
@@ -1266,7 +1276,203 @@
                 </div>
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="container">
+                    <div class="footer__top-inner">
+                        <div class="footer__top-col">
+                            <a href="/" class="footer__logo logo">
+                                <img src="images/logo-light.svg" alt="logo">
+                            </a>
+                            <div class="footer__top-text">
+                                Createx Online School is a leader in online studying. We have lots of courses and
+                                programs from the main market experts. We provide relevant approaches to online
+                                learning, internships and employment in the largest companies in the country.
+                            </div>
+                            <ul class="footer__socials">
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none" customFrame="#000000">
+                                            <rect id="Facebook" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Vector"
+                                                d="M17.5628 1.00458L14.7856 1C11.6654 1 9.64903 3.12509 9.64903 6.41423L9.64903 8.91055L6.85662 8.91055C6.61532 8.91055 6.41992 9.1115 6.41992 9.35937L6.41992 12.9763C6.41992 13.2241 6.61554 13.4249 6.85662 13.4249L9.64903 13.4249L9.64903 22.5514C9.64903 22.7993 9.84443 23 10.0857 23L13.729 23C13.9703 23 14.1657 22.799 14.1657 22.5514L14.1657 13.4249L17.4307 13.4249C17.672 13.4249 17.8674 13.2241 17.8674 12.9763L17.8688 9.35937C17.8688 9.24036 17.8226 9.12638 17.7409 9.04215C17.6591 8.95793 17.5477 8.91055 17.4318 8.91055L14.1657 8.91055L14.1657 6.79439C14.1657 5.77728 14.4017 5.26094 15.6915 5.26094L17.5624 5.26025C17.8035 5.26025 17.9989 5.0593 17.9989 4.81166L17.9989 1.45317C17.9989 1.20576 17.8037 1.00504 17.5628 1.00458Z"
+                                                fill="rgb(120,122,128)" fill-rule="nonzero" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none" customFrame="#000000">
+                                            <rect id="Twitter" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Vector"
+                                                d="M22.5 5.77233C21.7271 6.10027 20.8978 6.32267 20.0264 6.42196C20.9161 5.91181 21.5972 5.10263 21.92 4.1414C21.0854 4.61383 20.1642 4.95688 19.1826 5.14285C18.3966 4.33994 17.2785 3.83984 16.0384 3.83984C13.6593 3.83984 11.7303 5.68691 11.7303 7.9637C11.7303 8.2866 11.7683 8.60199 11.8418 8.90357C8.26201 8.73141 5.08768 7.08917 2.96314 4.59372C2.59176 5.20189 2.38049 5.91053 2.38049 6.66697C2.38049 8.09814 3.14161 9.36093 4.2964 10.0997C3.5904 10.0771 2.92639 9.89116 2.34508 9.58205L2.34508 9.63357C2.34508 11.6314 3.83056 13.2988 5.80024 13.6783C5.43936 13.7713 5.05882 13.8228 4.66514 13.8228C4.38696 13.8228 4.11794 13.7964 3.85417 13.7461C4.40267 15.3859 5.99315 16.5783 7.87756 16.611C6.40388 17.7167 4.54573 18.3739 2.52749 18.3739C2.17976 18.3739 1.83724 18.3537 1.5 18.3173C3.40671 19.4896 5.67036 20.1732 8.10327 20.1732C16.028 20.1732 20.3597 13.8881 20.3597 8.43741L20.3453 7.90341C21.1917 7.32537 21.9239 6.59912 22.5 5.77233Z"
+                                                fill="rgb(120,122,128)" fill-rule="nonzero" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none" customFrame="#000000">
+                                            <rect id="YouTube" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Subtract"
+                                                d="M21.3903 4.11358C22.4182 4.39044 23.2288 5.20086 23.5055 6.22899C24.0197 8.10691 23.9999 12.0213 23.9999 12.0213C23.9999 12.0213 23.9999 15.9158 23.5057 17.7939C23.2288 18.8218 22.4184 19.6324 21.3903 19.9091C19.5122 20.4035 12 20.4035 12 20.4035C12 20.4035 4.50731 20.4035 2.60961 19.8895C1.58148 19.6127 0.771054 18.802 0.4942 17.7741C0 15.9158 0 12.0015 0 12.0015C0 12.0015 0 8.10691 0.4942 6.22899C0.770871 5.20104 1.60125 4.37066 2.60943 4.09399C4.48753 3.59961 11.9998 3.59961 11.9998 3.59961C11.9998 3.59961 19.5122 3.59961 21.3903 4.11358ZM15.8549 12.0016L9.60788 15.5996L9.60788 8.40355L15.8549 12.0016Z"
+                                                fill="rgb(120,122,128)" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none">
+                                            <rect id="telegram" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Vector"
+                                                d="M9.63262 15.1813L9.2687 20.7653C9.78938 20.7653 10.0149 20.5213 10.2853 20.2283L12.7264 17.6833L17.7847 21.7243C18.7124 22.2883 19.366 21.9913 19.6163 20.7933L22.9365 3.8214L22.9374 3.8204C23.2317 2.3244 22.4415 1.73941 21.5377 2.10641L2.02135 10.2574C0.689406 10.8214 0.709573 11.6314 1.79493 11.9984L6.78447 13.6913L18.3742 5.78039C18.9196 5.38639 19.4155 5.60439 19.0076 5.99839L9.63262 15.1813Z"
+                                                fill="rgb(120,122,128)" fill-rule="nonzero" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none">
+                                            <rect id="Instagram" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Vector"
+                                                d="M21.5156 5.45374C21.7617 6.0868 21.9336 6.81738 21.9804 7.88005C22.0273 8.9467 22.0312 9.28658 22.0312 12.002C22.0312 14.7173 22.0195 15.0572 21.9726 16.1239C21.9258 17.1865 21.7538 17.9133 21.5078 18.5502C20.9881 19.8941 19.9254 20.9568 18.5813 21.4765C17.9484 21.7226 17.2178 21.8945 16.1552 21.9413C15.0885 21.9883 14.7486 21.9999 12.0333 21.9999C9.31791 21.9999 8.97788 21.9883 7.91139 21.9413C6.84856 21.8945 6.12195 21.7226 5.48507 21.4765C4.82088 21.2265 4.2153 20.8318 3.71517 20.3239C3.20726 19.8238 2.81274 19.2221 2.55879 18.5502C2.31261 17.9171 2.14061 17.1865 2.09376 16.1239C2.04691 15.0572 2.03516 14.7173 2.03516 12.002C2.03516 9.28658 2.04691 8.9467 2.09773 7.87609C2.14458 6.81341 2.31643 6.0868 2.5626 5.44992C2.81274 4.78573 3.20726 4.18014 3.71517 3.68002C4.2153 3.16814 4.81692 2.77743 5.48904 2.52348C6.12195 2.27746 6.85253 2.10546 7.9152 2.05861C8.98185 2.01175 9.32172 2 12.0371 2C14.7525 2 15.0923 2.01175 16.163 2.06257C17.2256 2.10943 17.9524 2.28127 18.5891 2.52745C19.2533 2.77743 19.8589 3.1721 20.359 3.68002C20.8709 4.18014 21.2616 4.78176 21.5156 5.45374ZM19.8355 17.9015C19.9723 17.5499 20.1364 17.0225 20.1794 16.0457C20.2262 14.9908 20.238 14.6783 20.238 12.0097C20.238 9.34122 20.2262 9.02484 20.1794 7.96995C20.1364 6.99701 19.9723 6.46575 19.8355 6.11412C19.6753 5.68038 19.4213 5.28967 19.0892 4.96536C18.7689 4.63327 18.3742 4.37931 17.9406 4.21921C17.589 4.08247 17.0616 3.9184 16.0848 3.87537C15.0337 3.82851 14.7174 3.81676 12.0449 3.81676C9.37652 3.81676 9.05999 3.82851 8.00509 3.87537C7.03231 3.9184 6.5009 4.08247 6.14927 4.21921C5.71553 4.37931 5.32483 4.63327 5.00067 4.96536C4.6646 5.28586 4.41065 5.68038 4.2504 6.11412C4.11365 6.46575 3.94959 6.99319 3.9067 7.96995C3.8597 9.02087 3.8481 9.34122 3.8481 12.0097C3.8481 14.6783 3.8597 14.9948 3.9067 16.0497C3.94959 17.0225 4.11365 17.5539 4.2504 17.9055C4.41065 18.3391 4.6646 18.7298 4.9967 19.0541C5.31704 19.3862 5.71171 19.6402 6.1453 19.8004C6.49693 19.9372 7.02437 20.1012 8.00113 20.1441C9.0522 20.1911 9.37255 20.2027 12.0411 20.2027C14.7096 20.2027 15.026 20.1911 16.0808 20.1441C17.0538 20.1012 17.585 19.9372 17.9367 19.8004C18.808 19.4643 19.4995 18.7728 19.8355 17.9015ZM17.378 7.86053C18.0405 7.86053 18.5776 7.32346 18.5776 6.6611C18.5776 5.99858 18.0405 5.46167 17.378 5.46167C16.7156 5.46167 16.1785 5.99858 16.1785 6.6611C16.1785 7.32346 16.7156 7.86053 17.378 7.86053ZM12.0371 6.86423C9.20069 6.86423 6.89937 9.1654 6.89937 12.002C6.89937 14.8385 9.20069 17.1397 12.0371 17.1397C14.8736 17.1397 17.1748 14.8385 17.1748 12.002C17.1748 9.1654 14.8736 6.86423 12.0371 6.86423ZM12.0371 15.3347C10.197 15.3347 8.70438 13.8422 8.70438 12.002C8.70438 10.1617 10.197 8.66924 12.0371 8.66924C13.8774 8.66924 15.3698 10.1617 15.3698 12.002C15.3698 13.8422 13.8774 15.3347 12.0371 15.3347Z"
+                                                fill="rgb(120,122,128)" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__socials-item">
+                                    <a href="#" class="footer__socials-link">
+                                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="24.000000"
+                                            height="24.000000" fill="none">
+                                            <rect id="Linked-In" width="24.000000" height="24.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Vector"
+                                                d="M2 4.40167C2 3.07583 3.07583 2 4.40167 2C5.72667 2 6.8025 3.07583 6.80333 4.40167C6.80333 5.7275 5.7275 6.82583 4.40167 6.82583C3.07583 6.82583 2 5.7275 2 4.40167ZM22 21.9992L21.995 22L17.8575 22L17.8575 15.4992C17.8575 13.95 17.8258 11.9633 15.7017 11.9633C13.5458 11.9633 13.2158 13.6467 13.2158 15.3875L13.2158 21.9992L9.07416 21.9992L9.07416 8.64667L13.0517 8.64667L13.0517 10.4675L13.11 10.4675C13.6625 9.41833 15.0158 8.31167 17.0325 8.31167C21.2275 8.31167 22 11.0758 22 14.6642L22 21.9992ZM2.32999 8.6475L6.47666 8.6475L6.47666 22L2.32999 22L2.32999 8.6475Z"
+                                                fill="rgb(120,122,128)" fill-rule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-col">
+                            <h3 class="footer__top-title footer__top-title--slide">SITE MAP</h3>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">About Us</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Courses</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Events</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Blog</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-col">
+                            <h3 class="footer__top-title footer__top-title--slide">COURSES</h3>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Marketing</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Management</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">HR & Recruting</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Design</a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="#" class="footer__item-link">Development</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-col">
+                            <h3 class="footer__top-title footer__top-title--slide">CONTACT US</h3>
+                            <ul class="footer__top-list">
+                                <li class="footer__top-item">
+                                    <a href="tel:4055550128" class="footer__item-link">
+                                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.000000"
+                                            height="16.000000" fill="none" customFrame="#000000">
+                                            <rect id="iPhone" width="16.000000" height="16.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Rectangle (Stroke)"
+                                                d="M5.66683 1.94661C5.11454 1.94661 4.66683 2.39433 4.66683 2.94661L4.66683 13.0508C4.66683 13.6031 5.11454 14.0508 5.66683 14.0508L10.3335 14.0508C10.8858 14.0508 11.3335 13.6031 11.3335 13.0508L11.3335 2.94661C11.3335 2.39433 10.8858 1.94661 10.3335 1.94661L10.2779 1.94661L10.1155 2.33625C10.012 2.58466 9.76928 2.74647 9.50016 2.74647L6.50016 2.74647C6.23104 2.74647 5.98832 2.58466 5.8848 2.33625L5.72242 1.94661L5.66683 1.94661ZM3.3335 2.94661C3.3335 1.65795 4.37817 0.613281 5.66683 0.613281L10.3335 0.613281C11.6222 0.613281 12.6668 1.65795 12.6668 2.94661L12.6668 13.0508C12.6668 14.3394 11.6222 15.3841 10.3335 15.3841L5.66683 15.3841C4.37816 15.3841 3.3335 14.3394 3.3335 13.0508L3.3335 2.94661Z"
+                                                fill="rgb(255,255,255)" fill-rule="evenodd" />
+                                        </svg>
+                                        (405) 555-0128
+                                    </a>
+                                </li>
+                                <li class="footer__top-item">
+                                    <a href="mailto:hello@createx.com" class="footer__item-link">
+                                        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="16.000000"
+                                            height="16.000000" fill="none">
+                                            <rect id="Mail" width="16.000000" height="16.000000" x="0.000000"
+                                                y="0.000000" />
+                                            <path id="Union"
+                                                d="M15.1668 12.0013L15.1668 4.66797C15.1668 3.5634 14.2714 2.66797 13.1668 2.66797L2.83349 2.66798C1.72893 2.66798 0.833496 3.56341 0.833496 4.66798L0.833496 12.0013C0.833496 13.1059 1.72893 14.0013 2.8335 14.0013L13.1668 14.0013C14.2714 14.0013 15.1668 13.1059 15.1668 12.0013ZM13.8335 6.17428L13.8335 12.0013C13.8335 12.3695 13.535 12.668 13.1668 12.668L2.8335 12.668C2.46531 12.668 2.16683 12.3695 2.16683 12.0013L2.16683 6.17419L6.87561 9.37616C7.55433 9.83769 8.44613 9.83769 9.12485 9.37616L13.8335 6.17428ZM13.8259 4.56704C13.7773 4.24674 13.5007 4.0013 13.1668 4.0013L2.83349 4.00131C2.49965 4.00131 2.22311 4.24671 2.17443 4.56696L7.62535 8.27359C7.85159 8.42743 8.14886 8.42743 8.3751 8.27359L13.8259 4.56704Z"
+                                                fill="rgb(255,255,255)" fill-rule="evenodd" />
+                                        </svg>
+                                        hello@createx.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer__top-col">
+                            <h3 class="footer__top-title">SIGN UP TO OUR NEWSLETTER</h3>
+                            <form class="footer__form">
+                                <div class="footer__form-items">
+                                    <input class="footer__form-input" type="email" placeholder="Email address" required>
+                                    <button class="footer__form-btn" type="submit"></button>
+                                </div>
+                                <div class="footer__form-desc">
+                                    *Subscribe to our newsletter to receive communications
+                                    and early updates from Createx SEO Agency.
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="container">
+                    <div class="footer__bottom-inner">
+                        <div class="footer__copy">
+                            © All rights reserved.
+                            Made with
+                            <span></span>
+                            by Createx Studio
+                        </div>
+                        <a href="#body" class="footer__go-top">GO TO TOP</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
